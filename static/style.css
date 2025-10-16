@@ -1,0 +1,252 @@
+:root {
+    --primary-color: #27AE60;   /* green for header/main highlights */
+    --accent-color: #F39C12;    /* orange for hover effects or accents */
+    --secondary-color: #333;    /* dark for nav/footer */
+    --background-color: #f9f9f9; /* page background */
+    --text-color: #333;         /* main text color */
+}
+
+/* Default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /* clean readable font */
+    line-height: 1.6; /* improves readability */
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Header */
+
+header {
+    background-color: var(--primary-color); /* green header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Navigation */
+
+nav {
+    background-color: var(--secondary-color); 
+    height: 50px;      
+    display: flex;
+    align-items: center;                     
+    justify-content: center;                  
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav ul li {
+    margin: 0 10px; 
+}
+
+
+nav ul li a {
+    color: white;                      
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;                     
+    align-items: center;         
+    justify-content: center;          
+    height: 100%;                  
+    padding: 0 15px;       
+    border-radius: 5px;                
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+nav ul li a:hover {
+    background-color: var(--accent-color); 
+    transform: translateY(-2px);          
+    color: white;                         
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main h1 {
+    margin-bottom: 5px;
+    font-size: 2em;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    text-align: center;
+}
+
+main h3 {
+    font-size: 1.2em;
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Paragraph styling */
+main p {
+    margin-bottom: 15px;    
+    font-size: 1em;          
+    line-height: 1.6;      
+    text-align: center; 
+    color: var(--text-color); 
+}
+
+/* home image styling */
+
+.profile-pic {
+    display: block;
+    margin: 20px auto;    
+    width: 300px;       
+    height: 300px;        
+    object-fit: cover;  
+    border-radius: 50%;  
+    border: 3px solid var(--primary-color);
+}
+
+
+/* about section */
+
+.about-photo {
+    text-align: center;  /* center the image */
+    margin-bottom: 20px;
+}
+
+.about-card {
+    max-width: 800px;           /* wider card for text */
+    margin: 0 auto 30px auto;   /* center card and space below */
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    line-height: 1.6;           /* more readable text */
+    font-size: 1rem;
+}
+
+.about-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+/* project section */
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.project-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.project-btn:hover {
+    background-color: var(--accent-color);
+}
+
+/* skills section */
+
+
+.skill-list {
+    display: inline-block;        
+    text-align: center;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    color: var(--accent-color); 
+    margin: 0;      
+}
+
+/* button styling */
+
+.home-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    width: 180px;
+    background-color: var(--primary-color); 
+    color: white;
+    padding: 10px 0;
+    margin: 125px;            
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--accent-color); 
+    transform: translateY(-2px);           
+}
+
